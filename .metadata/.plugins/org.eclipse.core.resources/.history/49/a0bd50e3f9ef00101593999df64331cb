@@ -1,0 +1,9 @@
+package banc;
+
+public class banckingAccount {
+	private int accountNumber;
+	private String name;
+	private double initialDeposit;
+	
+	
+}

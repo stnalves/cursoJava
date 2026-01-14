@@ -1,0 +1,39 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Product;
+
+public class Program2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double totalPrice;
+		
+		System.out.print("Quantos produtos voce vai digitar? ");
+		int n = sc.nextInt();
+		Product[] products = new Product[n];
+		
+		for (int i = 0; i < n; i++) {
+			System.out.println("Enter product data:");
+			System.out.print("Name: ");
+			String name = sc.nextLine();
+			System.out.print("Price: ");
+			double price = sc.nextDouble();
+			System.out.print("Quantity in stock: ");
+			int qnt = sc.nextInt();
+		
+			products[i] = new Product(name, price, qnt);
+		}
+		
+		totalPrice = 0;
+		for (Product p: products) {
+			totalPrice += p.getPrice();
+		}
+			
+		double avPrice = totalPrice / n;
+		System.out.printf("Avarege price = %.2f\n", avPrice);
+		
+		sc.close();
+	}
+}

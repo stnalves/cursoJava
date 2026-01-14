@@ -1,0 +1,48 @@
+package mercado;
+
+public class produto {
+	String nome;
+	double preco;
+	double qnt;
+	double valorTotal;
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getPreco() {
+		return preco;
+	}
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+	public double getQnt() {
+		return qnt;
+	}
+	public void setQnt(double qnt) {
+		this.qnt = qnt;
+	}
+	public void setValorTotal(double valorTotal) {
+		this.valorTotal = this.preco * this.qnt;
+	}
+	
+	public double totalNoEstoque() {
+		return this.qnt;
+	}
+	
+	public void adicionarProdutos(int qnt) {
+		this.qnt += qnt;
+	}
+	
+	public void removerProdutos(int qnt) {
+		this.qnt -= qnt;
+	}
+	
+	@Override
+	public String toString() {
+		return "Produto: " + nome + "; Preço: R$ " + String.format("%.2f", preco) + "; Quantidade: " + qnt + ", Valor total: R$ " + String.format("%.2f" , valorTotal);
+	}
+	
+}

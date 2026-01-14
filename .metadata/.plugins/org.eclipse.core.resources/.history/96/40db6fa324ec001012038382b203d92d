@@ -1,0 +1,19 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Salario {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int numeroFuncionario, valorHora;
+		double horasTrabalhadas, salario;
+		
+		horasTrabalhadas = sc.nextDouble();
+		valorHora = sc.nextInt();
+		
+		salario = horasTrabalhadas * valorHora;
+		
+		sc.close();
+	}
+}

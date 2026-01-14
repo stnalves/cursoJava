@@ -1,0 +1,36 @@
+package mercado;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Insira os dados do produto:");
+		System.out.print("Nome: ");
+		String nome = sc.nextLine();
+		System.out.print("Preço: ");
+		double preco = sc.nextDouble();
+		System.out.print("Quantidade em estoque: ");
+		int qnt = sc.nextInt();
+		
+		Produto produto = new Produto(nome, preco, qnt);
+		
+		System.out.println();
+		System.out.println(produto);
+		
+		System.out.println();
+		System.out.print("Insira o número de produtos para adicionar em estoque: ");
+		int qntAdicionar = sc.nextInt();
+		produto.adicionarProdutos(qntAdicionar);
+		System.out.println(produto);
+		
+		System.out.println();
+		System.out.print("Insira o número de produtos para remover em estoque: ");
+		int qntRemover= sc.nextInt();
+		produto.removerProdutos(qntRemover);
+		System.out.println(produto);
+		
+		sc.close();
+	}
+}

@@ -1,0 +1,22 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ValorPagar {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int codigo1, codigo2, numPecas1, numPecas2;
+		double valorUnit1, valorUnit2;
+		
+		codigo1 = sc.nextInt();
+		numPecas1 = sc.nextInt();
+		valorUnit1 = sc.nextDouble();
+		
+		codigo2 = sc.nextInt();
+		numPecas2 = sc.nextInt();
+		valorUnit2 = sc.nextDouble();
+		
+		sc.close();
+	}
+}

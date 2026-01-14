@@ -1,0 +1,46 @@
+package Triangulo;
+
+public class Triangulo {
+	double a;
+	double b;
+	double c;
+	
+	public Triangulo(double a, double b, double c) {
+		this.a = a;
+		this.b = b;
+		this.b = b;
+	}
+	
+	public double getA() {
+		return a;
+	}
+
+	public void setA(double a) {
+		this.a = a;
+	}
+
+	public double getB() {
+		return b;
+	}
+
+	public void setB(double b) {
+		this.b = b;
+	}
+
+	public double getC() {
+		return c;
+	}
+
+	public void setC(double c) {
+		this.c = c;
+	}
+
+	private double perimetro(double a, double b, double c) {
+		return (a + b + c) / 2;
+	}
+	
+	public double area(double a, double b, double c) {
+		double p = perimetro(a, b, c);
+		return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+	}
+}

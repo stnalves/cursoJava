@@ -1,0 +1,8 @@
+package mercado;
+
+public class estoque {
+	String nome;
+	double preco;
+	double qnt;
+	
+}

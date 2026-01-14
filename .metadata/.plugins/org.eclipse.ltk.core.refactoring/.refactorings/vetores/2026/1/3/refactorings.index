@@ -1,0 +1,23 @@
+1768424295315	Delete element
+1768425577040	Rename local variable 'qnt'
+1768425599952	Rename local variable 'n'
+1768425621527	Rename local variable 'qnt'
+1768425630987	Rename local variable 'n'
+1768429883527	Move compilation unit
+1768429902781	Move compilation unit
+1768429924193	Rename type 'negativos'
+1768429933687	Rename type 'somaVetor'
+1768429949013	Rename type 'pessoa'
+1768430326026	Rename type 'alturas'
+1768431528976	Rename type 'Pessoa'
+1768431535679	Rename field 'nome'
+1768431542352	Rename local variable 'nome'
+1768431558790	Rename local variable 'nome'
+1768431587346	Rename local variable 'idade'
+1768431603381	Rename local variable 'idade'
+1768431632769	Rename field 'altura'
+1768431639436	Rename local variable 'altura'
+1768431661674	Rename local variable 'altura'
+1768433171224	Rename local variable 'sum'
+1768433183219	Rename local variable 'avg'
+1768433650597	Rename local variable 'bellowAge'

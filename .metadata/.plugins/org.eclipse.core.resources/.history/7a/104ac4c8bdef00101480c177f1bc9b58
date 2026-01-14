@@ -1,0 +1,56 @@
+package estoque;
+
+public class Produto {
+	String nome;
+	double preco;
+	int qnt;
+	double valorTotal;
+	
+	public Produto(String nome, double preco, int qnt) {
+		this.nome = nome;
+		this.preco = preco;
+		this.qnt = qnt;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public double getPreco() {
+		return preco;
+	}
+	
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+	
+	public int getQnt() {
+		return qnt;
+	}
+	
+	public void setQnt(int qnt) {
+		this.qnt = qnt;
+	}
+	
+	public double valorNoEstoque() {
+		return this.preco * this.qnt;
+	}
+	
+	public void adicionarProdutos(int qnt) {
+		this.qnt += qnt;
+	}
+	
+	public void removerProdutos(int qnt) {
+		this.qnt -= qnt;
+	}
+	
+	@Override
+	public String toString() {
+		return "Dados do produto: " + nome + ", R$ " + String.format("%.2f", preco) + ", " + qnt + " unidades, Total: R$ " + String.format("%.2f" , valorNoEstoque());
+	}
+	
+}

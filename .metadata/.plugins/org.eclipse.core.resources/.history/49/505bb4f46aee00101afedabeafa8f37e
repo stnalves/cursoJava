@@ -1,0 +1,40 @@
+package Area;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double aX, bX, cX, aY, bY, cY;
+		
+		System.out.println("Digite as medidas do Triangulo X:");
+		aX = sc.nextDouble();
+		bX = sc.nextDouble();
+		cX = sc.nextDouble();
+
+		System.out.println("Digite as medidas do Triangulo Y:");
+		aY = sc.nextDouble();
+		bY = sc.nextDouble();
+		cY = sc.nextDouble();
+		
+		Triangulo t1 = new Triangulo(aX, bX, cX);
+		Triangulo t2 = new Triangulo(aY, bY, cY);
+		
+		double area1 = t1.area();
+		double area2 = t2.area();
+		
+		System.out.println("Area do triangulo X: " + area1);
+		System.out.println("Area do triangulo Y: " + area2);
+		
+		System.out.println("Maior area: " + maiorArea(area1, area2));
+		
+		sc.close();
+	}
+	
+	private static String maiorArea(double area1, double area2) {
+		if (area1 > area2) {
+			return "X";
+		} return "Y";
+	}
+}

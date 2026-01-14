@@ -1,0 +1,23 @@
+package bank;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int accountNumber = sc.nextInt();
+		String name = sc.nextLine();
+		
+		System.out.print("y/n");
+		char choice = sc.next().charAt(0);
+		if (choice == 'y') {
+			double initialDeposit = sc.nextDouble();
+			BankingAccount account = new BankingAccount(accountNumber, name, initialDeposit);
+		}
+		
+		sc.close();
+	}
+}

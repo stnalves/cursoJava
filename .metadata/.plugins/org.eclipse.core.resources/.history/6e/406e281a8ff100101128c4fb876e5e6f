@@ -1,0 +1,31 @@
+package vetores;
+
+import java.util.Scanner;
+
+public class somaVetor {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double soma = 0;
+		
+		System.out.print("Quantos numeros voce vai digitar? ");
+		int qnt = sc.nextInt();
+		double[] numeros = new double[qnt];
+		
+		for (int i = 0; i < qnt; i++) {
+			System.out.print("Digite um numero: ");
+			numeros[i] = sc.nextInt();
+		}
+		
+		System.out.print("VALORES = ");
+		for (double n: numeros) {
+			System.out.print(n + "  ");
+			soma += n;
+		}
+		
+		System.out.println("SOMA = " + soma);
+		System.out.println("MEDIA = " + soma/qnt);
+		
+		sc.close();
+	}
+}

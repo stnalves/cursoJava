@@ -1,0 +1,39 @@
+package estoque;
+
+public class Product {
+	public String name;
+	public double price;
+	public int qnt;
+	
+	public Product(String nome, double preco, int qnt) {
+		this.name = nome;
+		this.price = preco;
+		this.qnt = qnt;
+	}
+	
+	public Product(String nome, double preco) {
+		this.name = nome;
+		this.price = preco;
+	}
+	
+	public double totalValueInStock() {
+		return price * qnt;
+	}
+	
+	public void addProducts(int qnt) {
+		this.qnt += qnt;
+	}
+	
+	public void removeProducts(int qnt) {
+		this.qnt -= qnt;
+	}
+	
+	@Override
+	public String toString() {
+		return name + 
+				", $ " + String.format("%.2f", price) + ", " 
+				+ qnt + " units, Total: $ " 
+				+ String.format("%.2f" , totalValueInStock());
+	}
+	
+}

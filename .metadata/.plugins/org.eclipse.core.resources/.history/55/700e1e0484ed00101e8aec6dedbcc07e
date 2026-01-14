@@ -1,0 +1,28 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Posto {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int alcool = 0;
+		int gasolina = 0;
+		int diesel = 0;
+		
+		int codigo = sc.nextInt();
+		
+		while (codigo != 4) {
+			if (codigo == 1) {
+				alcool++;
+			} else if (codigo == 2) {
+				gasolina++;
+			} else if (codigo == 3) {
+				diesel++;
+			}
+			
+			codigo = sc.nextInt();
+		}
+		sc.close();
+	}
+}

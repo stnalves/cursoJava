@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;filmnow.FilmNow.getHotList(...)&apos; to &apos;getHot&apos;&#x0D;&#x0A;- Original project: &apos;lab3FilmNow&apos;&#x0D;&#x0A;- Original element: &apos;filmnow.FilmNow.getHotList(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;filmnow.FilmNow.getHot(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;getHotList&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;filmnow{FilmNow.java[FilmNow~getHotList~I" name="getHot" references="true" stamp="1765238409375" version="1.0"/>
+</session>
